@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login page</title>
+        
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="stylelogin.css">
+        <link rel="styleshet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!--Google font-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+            <!--aos css slider-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <style>
+            
+                /* width: 100vw;
+                height: 100vh;
+                /* display: flex;  */
+                 /* justify-content: center; */
+                /* align-items: center;  */
+                /* background-color: #fff; */ 
+            
+            /* form{
+                width: 300px;
+                height: 50px;
+                position: absolute;
+            }
+            .form input {
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                border:  2px solid #2ecc71;
+                border-radius: 14px;
+                outline: none;
+                padding: 12px 12px;
+                font-size: 12px;
+            }
+            .form label {
+                position: relative;
+                /* top: 10vh; */
+                /* bottom: 55px;
+                color: white;
+                text-transform: uppercase;
+                transition: top .5s;
+                padding: 0px 5px;
+                pointer-events: none;
+            }
+            .form input:focus ~ label {
+                top: -33px;
+            } */
+        </style>
+        <script src="javascript">
+             let ope = JSON.parse(localStorage.getItem("register"));
+        </script>
+           
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #333; height: 60px; ">
+            <a class="navbar-brand" href="#"><img src="./emirates-logo-horizontal.svg" width="150"  height="60" style="position:relative; left: 250px; background-size: contain; background-color: rgba(255, 0, 0, 0.817);"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="container surround">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 style="font-size: 35px; margin-top:-25px">Log in to Emirates</h3>
+                    <p style="font-size:15px; line-height: 15px; font-weight: 500;">Earn Miles every time you fly with us and our partners. And <br> spend your Skywards Miles on a world of rewards.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container border border-dark border-3 bg-white my-5 ">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row px-2">
+                        <div class="col-md-12">
+                            <label for="Login" style="color:#333; font-size: 20px; font-weight: 500; ">Login</label>
+                            <input type="text" id="email" value=""  class="form-control shadow-md mt-3" placeholder="Email or Emirate Skyward number">
+                            <span class="mt-2" style="margin-left: 97px;"><a href="#" class="text-danger "><a href="#" class="text-danger">Forgot your email or account number?</a></span>
+                            <input type="text"  class="form-control" id="pass" value="" placeholder="password">
+                            <span style="margin-bottom: 22px; margin-left: 97px;"><a href="#"  class="text-danger mb-4">Forgot / create password</a></span>
+                            <div class="form-check">
+                                <label for="checker" class="form-check-label"><input type="checkbox" class="form-check-box">Keep me logged in on this device</label>
+                            </div>
+                            <div style="background: #c60c30; padding: 9px 9px; margin-top: 23px; border-radius: 7px; margin-bottom: 12px; text-align: center;"><a href="#" style="font-size: 15px" class="text-white text-decoration-none" onclick="login()">Login</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <img src="./Capture.PNG" alt="capture" class="img-responsive img-fluid" style="position:relative ;">
+                </div>
+                <div class="col-md-5 now px-2">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 style="font-size: 19px">Not an Emirates Skywards<br> member yet?</h3>
+                            <p class="mb-4">
+                                Register now to make the most of every mile with<u>Emirate skyward</u>
+                            </p>
+                            <span style="background-color: white; padding: 12px 83px; text-align: center; border: 1px solid black;" ><a href="#" style="color: #495057">Join now</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid" style="background-color: #333">
+            <div class="container">
+                <div class="row justify-content-justify">
+                    <div class="col-md-12">
+                        <div class="row footer mt-4 text-justify">
+                            <div class="col-md-3">
+                                <h3>About</h3>
+                                <p><a href="#">About us</a></p>
+                                <p><a href="#">Media Centre</a></p>
+                                <p><a href="#">Our planet</a></p>
+                                <p><a href="#">Our people</a></p>
+                                <p><a href="#">Our communities</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Help</h3>
+                                <p><a href="#">Travel Updates</a></p>
+                                <p><a href="#">Help and Contact</a></p>
+                                <p><a href="#">Special assistance</a></p>
+                                <p><a href="#">Frequently asked questions</a></p>
+                            </div>
+                            <div class="col-md-3">
+                            <h3>Book</h3>
+                                <p><a href="#">Travel Updates</a></p>
+                                <p><a href="#">Help and Contact</a></p>
+                                <p><a href="#">Special assistance</a></p>
+                                <p><a href="#">Frequently asked questions</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <h3>Manage</h3>
+                                <p><a href="#">Travel Updates</a></p>
+                                <p><a href="#">Help and Contact</a></p>
+                                <p><a href="#">Special assistance</a></p>
+                                <p><a href="#">Frequently asked questions</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-3 justify-content-justify">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="div mb-4">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container justify-content-justify">
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <div class="row footer22">
+                                <div class="col-md-3">
+                                    <h3>About</h3>
+                                    <p><a href="#">About us</a></p>
+                                    <p><a href="#">Media Centre</a></p>
+                                    <p><a href="#">Our planet</a></p>
+                                    <p><a href="#">Our people</a></p>
+                                    <p><a href="#">Our communities</a></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Help</h3>
+                                    <p><a href="#">Travel Updates</a></p>
+                                    <p><a href="#">Help and Contact</a></p>
+                                    <p><a href="#">Special assistance</a></p>
+                                    <p><a href="#">Frequently asked questions</a></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Book</h3>
+                                    <p><a href="#">Travel Updates</a></p>
+                                    <p><a href="#">Help and Contact</a></p>
+                                    <p><a href="#">Special assistance</a>
+                                    <p><a href="#">Frequently asked questions</a></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Book</h3>
+                                    <p><a href="#">Travel Updates</a></p>
+                                    <p><a href="#">Help and Contact</a></p>
+                                    <p><a href="#">Special assistance</a></p>
+                                    <p><a href="#">Frequently asked questions</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container justify-content-justify">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 sub">
+                                <h3 class="text-white ">Subscribe to our special offers</h3>
+                                <p class="text-white">Save with our latest fares and offers.</p>
+                                <p class="text-white">Unsubscribe or change your preferences</p>
+                            </div>
+                            <div class="col-md-4 app">
+                                <h3 class="text-uppercase">Emirates App</h3>
+                                <p>Book and manage your flights on the go.</p>
+                            </div>
+                            <div class="col-md-4 exp">
+                                <h3 class="text-uppercase">Connect with us</h3>
+                                <p>Share your Emirates experience.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form d-flex">
+                            <input type="text" class="form-control2 me-5" placeholder="Email address">
+                            <button class="btn btn-outline-light  btn-sm">Subscribe</button>
+                        </div>
+                        <p><a href="#" class="detail">For details on how we use your information, please see our <u>Privacy Policy</u></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li<a href=""><img src="apple-en.svg"></a></li>
+                            <li<a href=""><img src="google-playstore.svg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4" >
+                        <div class="social-media">
+                            <a><i class="fa-brands fa-facebook"></i></a>
+                            <a><i class="fa-brands fa-instagram"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a> 
+                            <a><i class="fa-brands fa-youtube"></i></a> 
+                            <a><i class="fa-brands fa-linkedin"></i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container justify-content-justify">
+                <div class="row ">
+                    <div class="col-md-4 text-justify">
+                            <img src="sky.svg" class="img-responsive"  alt="sky" width="250px" >
+                    </div>
+                    <div class="col-md-4 text-justify">
+                        <img src="sky.svg" class="img-responsive"  alt="sky" width="250px" >
+                    </div>
+                    <div class="col-md-4 text-justify">
+                        <img src="sky.svg" class="img-responsive"  alt="sky" width="250px" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-5 text-justify">
+                            <hr>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="container justify-content-justify">
+                <div class="row">
+                    <div class="col-md-5 text-justify">
+                        <ul class="list-unstyled access">
+                            <li><a href="#">Accessibility statement</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Cybersecurity</a></li>
+                            <li><a href="#">Modern Slavery Act transparency statement</a></li>
+                            <li><a href="#"> Sitemap</a></li><br>
+                            <li><a class="#">Modern Slavery Act transparency statement</a></li>
+                            <li><a class="#">Sitemap</a></li>
+                            <p style="color: #fff; font-size:11px; font-weight: 700;">© 2022 The Emirates Group. All Rights Reserved.</p>
+                        </ul> 
+                    </div>
+                    <div class="col-md-7">
+                        <a class="navbar-brand" href="#"><img src="emirate.png" width="100" class="ml-4"  height="120" style="top: 2em;position:relative; margin-top: -23px;"></a>
+                    </div>
+                </div> 
+            </div>
+        </footer> 
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--Vendor files-->
+        <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>  
+        <script>
+            let tobi = JSON.parse(localStorage.getItem("register"));
+            function login(){
+                mail = email.value;
+                pwd = pass.value;
+                email.value = "";
+                pass.value = ""
+                // tobi.map((check, i)=>{
+                //     if (mail === check.email && pwd === check.password) {
+                //         console.log("It exist")
+                //         window.location.href ="../landing-page/index.html"
+                //     } else {
+                //         console.log("it does'nt exit")
+                //     }
+                // })
+                for ( i = 0; i <tobi.length; i++) {
+                    if (mail==tobi[i].email && pwd ==tobi[i].password) {
+                        window.location.href  = "../landing-page/index.html";
+                    }else{
+                        alert("invalid account");
+                    }
+                    
+                }
+            }
+        </script>
+    </body>
+</html>

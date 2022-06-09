@@ -1,0 +1,160 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.surround  {
+    margin-top: 104px;
+}
+.surround  h3 {
+    color: #333;
+    text-shadow: 2px 2px hsl(0deg 0% 100% / 30%);
+    font-family: 'Nuosu SIL', serif;;
+    font-weight: 700;
+    font-size: 54px;
+}
+.surround p {
+    color: #333;
+    font-size: 27px;
+}
+.form-check-label{
+color: #c60c30;
+}
+.app p {
+    color:#a9a9a9;
+    font-size: 13px;
+}
+.form-control{
+    padding: 12px 27px !important;
+    background-color: white;
+    font-size: 20px;
+}
+.wrapper {
+    box-shadow: 0 2px 4px 2px rgb(0 0 0 / 19%);
+    width: 65% !important;
+    height: 330px;
+    /* margin-top: 30px;    */
+}
+.social-media .fa-brands  {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 5px 9px;
+    border-radius: 8px;
+}
+
+.detail {
+    color: #a9a9a9;
+    font-size: 14px;  
+}
+.detail a{
+    color: #a9a9a9;
+    font-size: 14px; 
+}
+.new  {
+    border: 2px solid white;
+}
+.detail a:hover {
+    color: #a9a9a9;
+    font-size: 14px;
+    
+}
+.detail:hover {
+    color: #495057;
+    text-decoration: none;
+}
+.access a:hover {
+    color: #a9a9a9;
+    text-decoration: none;
+    background-color: transparent;
+}
+.access li {
+    display: inline-block;
+    padding: 0px 7px;
+}
+.access a{
+    color: #a9a9a9;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 11px;
+
+}
+.footer22 a {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.footer22 a:hover {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.now {
+    padding-top: 90px;
+}
+.okay {
+    border-right: 2px solid black;  
+}
+.form-control::placeholder{
+    /* padding: 10px; */
+    font-size: 14px;
+    color: black;
+    top: -12px;
+    transition: top .5s;;
+}
+
+.exp h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.exp p {
+    color: #a9a9a9;
+  font-size: 13px;
+
+}
+.footer h3 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer a {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.footer a:hover {
+    color:#a9a9a9;
+    font-family:  'Lucida Grande', 'Times New Roman', Times, serif, 'Lucida Sans Unicode',Verdana, sans-serif;
+    text-align: justify !important;
+    
+}
+.footer22 h3 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sub h3 {
+    font-size: 21px;
+    font-family: Emirates-Bold;
+    color: #fff;
+    font-weight: 500;
+
+}
+.sub h3 {
+    font-size: 21px;
+    font-family: Emirates-Bold;
+    color: #fff;
+    font-weight: 500;
+
+}
+.app h3 {
+color:gainsboro;
+font-size: 17px;
+
+}
